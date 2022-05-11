@@ -6,7 +6,6 @@ namespace FinancialAssetsWallet.Domain.Model.Extensions
     {
         public static string NameValidationRegex = "^.*$";
 
-        //todo"ver dps: Para remover os - do documento
         public static string EraseNonNumericCharacters(this string @string)
         {
             return Regex.Replace(@string, "[^0-9]", string.Empty);
