@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\FinancialAssetsWallet.Domain\FinancialAssetsWallet.Domain.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>FinnacialAssetsWallet.Application</RootNamespace>
+  </PropertyGroup>
+
+</Project>
