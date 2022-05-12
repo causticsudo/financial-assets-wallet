@@ -21,13 +21,13 @@ namespace FinancialAssetsWallet.Domain.Model.WalletAggregate
         public double TotalIncome { get; set; }
         public double TotalInvested { get; set; }
 
-        public Wallet(Investor investor, DateTime createdAt)
+        public Wallet(Investor investor, DateTime createdAt, WalletStatus status = WalletStatus.Initial)
         {
             Investor = investor;
             TotalIncome = InitialValue;
             TotalInvested = InitialValue;
             CreatedAt = createdAt;
-            Status = WalletStatus.Initial;
+            Status = status;
             Assets = new List<Asset>();
             Movimentations = new List<Movimentation>();
         }

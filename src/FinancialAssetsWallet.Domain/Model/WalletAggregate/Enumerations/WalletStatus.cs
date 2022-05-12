@@ -6,7 +6,7 @@ namespace FinancialAssetsWallet.Domain.Model.Aggregates.Enumerations
     {
         [Description("Initial")]
         Initial = 0,
-        
+
         [Description("Created")]
         Created = 1,
 

@@ -7,14 +7,6 @@ namespace FinancialAssetsWallet.Core.Models
     {
         public virtual string Id { get; set; }
 
-        public virtual void GenerateNewGuidIdentity()
-        {
-            if (HasNotId())
-            {
-                Id = IdentityGenerator.NewGuidId();
-            }
-        }
-
         public virtual bool HasNotId() => string.IsNullOrWhiteSpace(Id);
 
         public override bool Equals(object? obj)

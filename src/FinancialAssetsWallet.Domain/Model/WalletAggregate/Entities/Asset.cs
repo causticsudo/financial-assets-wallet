@@ -33,8 +33,6 @@ namespace FinancialAssetsWallet.Domain.Model.WalletAggregate.Entities
             PurchasePrice = purchasePrice;
             PurchaseDate = DateTime.UtcNow;
             Amount = amount;
-
-            GenerateNewGuidIdentity();
         }
     }
 }
