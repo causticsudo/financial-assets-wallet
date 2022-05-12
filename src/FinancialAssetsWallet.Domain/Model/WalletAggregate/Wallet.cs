@@ -5,6 +5,7 @@ using System.Linq;
 using FinancialAssetsWallet.Core.Models;
 using FinancialAssetsWallet.Domain.Model.Aggregates.Enumerations;
 using FinancialAssetsWallet.Domain.Model.WalletAggregate.Entities;
+using FinancialAssetsWallet.Domain.Model.WalletAggregate.Enumerations;
 using FinancialAssetsWallet.Domain.Model.WalletAggregate.ValueObjects;
 
 namespace FinancialAssetsWallet.Domain.Model.WalletAggregate

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace FinancialAssetsWallet.Domain.Model.Aggregates.Enumerations
+namespace FinancialAssetsWallet.Domain.Model.WalletAggregate.Enumerations
 {
     public enum WalletStatus
     {
