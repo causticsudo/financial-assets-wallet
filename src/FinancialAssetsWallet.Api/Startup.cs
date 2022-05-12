@@ -24,6 +24,8 @@ namespace FinnacialAssetsWallet.Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "FinancialAssetsWallet.Api", Version = "v1" });
             });
+
+            //todo: register mediator service
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
