@@ -1,7 +1,6 @@
 ﻿using FinancialAssetsWallet.Core.Commands;
 using FinancialAssetsWallet.Domain.Commands.Validators;
 using FinancialAssetsWallet.Domain.Exceptions;
-using FinancialAssetsWallet.Domain.Model.Aggregates.Enumerations;
 using FinancialAssetsWallet.Domain.Model.WalletAggregate.Enumerations;
 using FinancialAssetsWallet.Domain.Model.WalletAggregate.ValueObjects;
 using FluentValidation.Results;

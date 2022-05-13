@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using MediatR;
 
 namespace FinnacialAssetsWallet.Api
 {
@@ -20,12 +21,11 @@ namespace FinnacialAssetsWallet.Api
         {
 
             services.AddControllers();
+            services.AddMediatR(typeof(Startup));;
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "FinancialAssetsWallet.Api", Version = "v1" });
             });
-
-            //todo: register mediator service
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

@@ -32,7 +32,7 @@ namespace FinancialAssetsWallet.Domain.Validators
                 .NotEmpty()
                 .Matches(RegexExtensions.NameValidationRegex);
 
-            RuleFor(movimentation => movimentation.AssetAmount)
+            RuleFor(movimentation => movimentation.AssetsTotal)
                 .GreaterThan(0);
 
             RuleFor(movimentation => movimentation.TransactionDate)
