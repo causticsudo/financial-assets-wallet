@@ -1,3 +1,4 @@
+using System.Reflection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -21,7 +22,7 @@ namespace FinnacialAssetsWallet.Api
         {
 
             services.AddControllers();
-            services.AddMediatR(typeof(Startup));;
+            services.AddMediatR(Assembly.GetExecutingAssembly());;
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "FinancialAssetsWallet.Api", Version = "v1" });
