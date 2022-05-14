@@ -1,5 +1,4 @@
 ﻿using System;
-using FinancialAssetsWallet.Core.Commands;
 using FluentValidation.Results;
 using MediatR;
 

@@ -1,5 +1,4 @@
 ﻿using System;
-using FinancialAssetsWallet.Core.Models;
 using FinancialAssetsWallet.Domain.Model.Aggregates.Enumerations;
 
 namespace FinancialAssetsWallet.Domain.Model.WalletAggregate.Entities

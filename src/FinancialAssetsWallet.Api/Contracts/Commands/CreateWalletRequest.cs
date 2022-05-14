@@ -1,6 +1,6 @@
-﻿using FinancialAssetsWallet.Core.Models;
-using FinancialAssetsWallet.Domain.Commands;
+﻿using FinancialAssetsWallet.Domain.Commands;
 using FinancialAssetsWallet.Domain.Exceptions;
+using FinancialAssetsWallet.Domain.Model;
 using FinnacialAssetsWallet.Api.Contracts.Validators;
 
 namespace FinnacialAssetsWallet.Api.Contracts.Commands

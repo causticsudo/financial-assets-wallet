@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using FinancialAssetsWallet.Core.Models;
 using FinancialAssetsWallet.Domain.Model.WalletAggregate.Entities;
 using FinancialAssetsWallet.Domain.Model.WalletAggregate.Enumerations;
 using FinancialAssetsWallet.Domain.Model.WalletAggregate.ValueObjects;

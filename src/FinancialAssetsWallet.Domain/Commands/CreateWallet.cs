@@ -1,10 +1,9 @@
-﻿using FinancialAssetsWallet.Core.Commands;
-using FinancialAssetsWallet.Domain.Commands.Validators;
+﻿using FinancialAssetsWallet.Domain.Commands.Validators;
 using FinancialAssetsWallet.Domain.Exceptions;
 using FinancialAssetsWallet.Domain.Model.WalletAggregate.Enumerations;
 using FinancialAssetsWallet.Domain.Model.WalletAggregate.ValueObjects;
 using FluentValidation.Results;
-using Command = FinancialAssetsWallet.Domain.Commands.Abstractions.Command;
+using FinancialAssetsWallet.Domain.Commands.Abstractions;
 
 namespace FinancialAssetsWallet.Domain.Commands
 {
