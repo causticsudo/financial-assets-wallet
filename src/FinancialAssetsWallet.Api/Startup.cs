@@ -1,4 +1,5 @@
 using System.Reflection;
+using FinancialAssetsWallet.Domain;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -22,7 +23,7 @@ namespace FinnacialAssetsWallet.Api
         {
 
             services.AddControllers();
-            services.AddMediatR(Assembly.GetExecutingAssembly());;
+            services.AddMediatR(typeof(DomainMediatrEntrypoint).Assembly);
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "FinancialAssetsWallet.Api", Version = "v1" });
@@ -31,7 +32,7 @@ namespace FinnacialAssetsWallet.Api
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
+            if (true)
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
