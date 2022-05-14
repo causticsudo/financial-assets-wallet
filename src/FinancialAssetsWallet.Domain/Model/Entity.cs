@@ -1,7 +1,7 @@
 ﻿#nullable enable
 #pragma warning disable CS8618
 
-namespace FinancialAssetsWallet.Core.Models
+namespace FinancialAssetsWallet.Domain.Model
 {
     public abstract class Entity
     {

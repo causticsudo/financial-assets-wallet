@@ -4,6 +4,7 @@ using FinancialAssetsWallet.Domain.Exceptions;
 using FinancialAssetsWallet.Domain.Model.WalletAggregate.Enumerations;
 using FinancialAssetsWallet.Domain.Model.WalletAggregate.ValueObjects;
 using FluentValidation.Results;
+using Command = FinancialAssetsWallet.Domain.Commands.Abstractions.Command;
 
 namespace FinancialAssetsWallet.Domain.Commands
 {

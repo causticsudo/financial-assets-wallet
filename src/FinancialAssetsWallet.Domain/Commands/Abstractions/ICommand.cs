@@ -1,7 +1,7 @@
 ﻿using System;
 using MediatR;
 
-namespace FinancialAssetsWallet.Core.Commands
+namespace FinancialAssetsWallet.Domain.Commands.Abstractions
 {
     public interface ICommand
     {

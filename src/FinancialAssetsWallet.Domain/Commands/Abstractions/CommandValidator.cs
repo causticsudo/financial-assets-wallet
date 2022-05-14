@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace FinancialAssetsWallet.Core.Commands
+namespace FinancialAssetsWallet.Domain.Commands.Abstractions
 {
     public class CommandValidator<T> : AbstractValidator<T> where T : ICommand
     {

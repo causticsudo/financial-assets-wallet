@@ -6,7 +6,7 @@ using FluentValidation;
 
 namespace FinancialAssetsWallet.Domain.Commands.Validators
 {
-    public class CreateWalletValidator : CommandValidator<CreateWallet>
+    public class CreateWalletValidator : Abstractions.CommandValidator<CreateWallet>
     {
         public CreateWalletValidator()
         {

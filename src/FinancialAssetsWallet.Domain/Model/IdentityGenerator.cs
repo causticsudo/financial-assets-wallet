@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FinancialAssetsWallet.Core.Models
+namespace FinancialAssetsWallet.Domain.Model
 {
     public static class IdentityGenerator
     {

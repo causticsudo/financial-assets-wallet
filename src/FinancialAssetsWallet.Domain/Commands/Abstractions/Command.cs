@@ -1,8 +1,9 @@
 ﻿using System;
+using FinancialAssetsWallet.Core.Commands;
 using FluentValidation.Results;
 using MediatR;
 
-namespace FinancialAssetsWallet.Core.Commands
+namespace FinancialAssetsWallet.Domain.Commands.Abstractions
 {
     public abstract class Command : ICommand<Unit>
     {
