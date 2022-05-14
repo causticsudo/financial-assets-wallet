@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using FinancialAssetsWallet.Core.Models;
 
 namespace FinancialAssetsWallet.Domain.Model.WalletAggregate.ValueObjects
 {

@@ -1,12 +1,12 @@
 ﻿using System.ComponentModel;
 
-namespace FinancialAssetsWallet.Domain.Model.Aggregates.Enumerations
+namespace FinancialAssetsWallet.Domain.Model.WalletAggregate.Enumerations
 {
     public enum WalletStatus
     {
         [Description("Initial")]
         Initial = 0,
-        
+
         [Description("Created")]
         Created = 1,
 

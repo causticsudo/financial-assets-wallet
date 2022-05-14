@@ -1,5 +1,4 @@
 ﻿using System;
-using FinancialAssetsWallet.Core.Models;
 using FinancialAssetsWallet.Domain.Model.Aggregates.Enumerations;
 
 namespace FinancialAssetsWallet.Domain.Model.WalletAggregate.Entities
@@ -13,9 +12,10 @@ namespace FinancialAssetsWallet.Domain.Model.WalletAggregate.Entities
         public double PurchasePrice { get; set; }
         public double? LastSalePrice { get; set; }
         public double? Balance { get;  set; }
-        public int Amount { get; set; }
+        public int AssetsTotal { get; set; }
         public DateTime PurchaseDate { get; set; }
         public DateTime? LastPurchaseMade { get; set; }
+        public Wallet Wallet { get; set; }
         public DateTime? LastSaleMade { get; set; }
 
         public Asset(
@@ -24,7 +24,7 @@ namespace FinancialAssetsWallet.Domain.Model.WalletAggregate.Entities
             string code,
             AssetType type,
             double purchasePrice,
-            int amount)
+            int assetsTotal)
         {
             WalletId = walletId;
             Fund = fund;
@@ -32,9 +32,7 @@ namespace FinancialAssetsWallet.Domain.Model.WalletAggregate.Entities
             Type = type;
             PurchasePrice = purchasePrice;
             PurchaseDate = DateTime.UtcNow;
-            Amount = amount;
-
-            GenerateNewGuidIdentity();
+            AssetsTotal = assetsTotal;
         }
     }
 }

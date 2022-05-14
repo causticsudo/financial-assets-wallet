@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace FinancialAssetsWallet.Core.Models
+namespace FinancialAssetsWallet.Domain.Model.WalletAggregate.ValueObjects
 {
     public abstract class ValueObject
     {
